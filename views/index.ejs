@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed|Playfair+Display&effect=anaglyph" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container-fluid text-center'id='top'>
+          <nav class='navbar fixed-top navbar-light' role='navigation' style='padding-bottom:100px;'>
+            <div class='container-fluid'>
+              <ul class='nav navbar-nav'>
+                <li><a href='#top'>Tegus<span class='sr-only'>(current)</span></a></li>
+                <li><a href='#proj'>micro-CT Scanning</a></li>
+                <li><a href='#recon'>Reconstruction</a></li>
+                <li><a href='#post'>Contrast-staining</a></li>
+              </ul>
+            </div>
+          </nav>
+        <h1 class='font-effect-anaglyph' style='padding-bottom: 100px'><%= title %></h1>
+        <h2>This is an Argentine Black and White Tegu <em>(Salvator merianae)</em></h2>
+        <div class='container-fluid'>
+          <img src='/images/tegu.jpg'>
+        </div>
+        <div class='container-fluid' id='proj' style='padding:25%'>
+          <a href='#top'><img src='/images/projections.gif'></a>
+          <p>X-ray projection images of formalin-fixed specimen</p>
+        </div>
+        <div class='container-fluid' id='recon' style='padding-bottom:20%'>
+          <a href='#top'><img src='/images/prestain.gif'></a>
+          <p>Reconstructed cross-sections showing bones only</p>
+        </div>
+        <div class='container-fluid' id='post' style='padding-bottom:20%'>
+          <a href='#top'><img src='/images/poststain.gif'></a>
+          <p>Reconstructed cross-sections after iodine staining, showing muscles as well as bones</p>
+        </div>
+
+    </div>
+  </body>
+</html>
