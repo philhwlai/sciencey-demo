@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title><%= title %></title>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/jquery.gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- BOOTSTRAP -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- LOCAL -->
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed|Playfair+Display&effect=anaglyph" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed|Playfair+Display&effect=anaglyph" rel="stylesheet">
   </head>
   <body>
     <div class='container-fluid text-center'id='top'>
-          <nav class='navbar fixed-top navbar-light' role='navigation' style='padding-bottom:100px;'>
+          <nav class='navbar navbar-fixed-top navbar-light' role='navigation' style='padding-bottom:0px; background-color: #000;'>
             <div class='container-fluid'>
               <ul class='nav navbar-nav'>
                 <li><a href='#top'>Tegus<span class='sr-only'>(current)</span></a></li>
@@ -23,7 +29,23 @@
               </ul>
             </div>
           </nav>
+    </div>
+
+    <div class='container-fluid' id='blackground' style='background-color:#000; margin-left:-50px;padding: 0px;width:100vw;'>
+        <div class="container-fluid" id="js-pinned">
+          <div class="cnc" id="js-animation"></div>
+        </div>
+        <!-- SCROLLMAGIC -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <!-- GREENSOCK TWEEN -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <script src='/javascripts/scroll.js'></script>
+    </div>
+
+    <div class='container-fluid' style='background-color:##FFF;'>
         <h1 class='font-effect-anaglyph' style='padding-bottom: 100px'><%= title %></h1>
+
         <h2>This is an Argentine Black and White Tegu <em>(Salvator merianae)</em></h2>
         <div class='container-fluid'>
           <img src='/images/tegu.jpg'>
@@ -40,6 +62,7 @@
           <a href='#top'><img src='/images/poststain.gif'></a>
           <p>Reconstructed cross-sections after iodine staining, showing muscles as well as bones</p>
         </div>
+
 
     </div>
   </body>

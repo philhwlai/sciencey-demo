@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -34,4 +35,16 @@ a {
    position: absolute;
    left: 50%;
    transform: translatex(-50%);
+}
+
+/* for scrollmagic */
+
+
+.cnc {
+  margin: auto;
+  padding: 0;
+  width: 900px;
+  height: 900px;
+  background:  url('/images/teguspin.jpg') no-repeat 0 0%;
+  background-size: auto 100%;
 }
